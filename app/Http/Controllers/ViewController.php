@@ -23,4 +23,8 @@ class ViewController extends Controller
     {
         return view('ftoc');
     }
+    function showMe()
+    {
+
+    }
 }
