@@ -14,7 +14,7 @@
 
 	<title>ABSEN PEGAWAI</title>
 </head>
-<body>
+<body class="container m-4">
 
 	<h3>Data Pegawai</h3>
 
