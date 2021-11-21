@@ -3,9 +3,9 @@
 <head>
 	<title>ABSEN PEGAWAI</title>
 </head>
-<body>
+<body class="container m-4">
 
-	<h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
+	<h2><a href="https://www.malasngoding.com"></a></h2>
 	<h3>Absen Pegawai</h3>
 
 	<a href="/absen"> Kembali</a>
