@@ -22,6 +22,11 @@ Route::get('praktikum1', function () {
 Route::get('tugas4', function () {
     return view('welcome');
 });
+
+Route::get('coba', function () {
+    return view('coba');
+});
+
 Route::get('praktikum2','ViewController@showPraktikum2');
 Route::get('formets','ViewController@showFormets');
 

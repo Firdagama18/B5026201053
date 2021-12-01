@@ -1,26 +1,45 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>ABSEN PEGAWAI</title>
-</head>
-<body class="container m-4">
+@extends('layout.ceria')
 
-	<h2><a href="https://www.malasngoding.com"></a></h2>
-	<h3>Absen Pegawai</h3>
+@section('title', 'ABSEN PEGAWAI')
 
-	<a href="/absen"> Kembali</a>
+@section('isikonten')
+
+@section('judulhalaman', 'TAMBAH ABSEN')
+
+	<a href="/absen" class="btn btn-secondary"> Kembali</a>
 
 	<br/>
 	<br/>
 
 	<form action="/absen/store" method="post">
 		{{ csrf_field() }}
-		ID <input type="number" name="ID" required="required"> <br/>
-		IDPegawai <input type="number" name="IDPegawai" required="required"> <br/>
-		Tanggal <input type="datetime" name="tanggal" required="required"> <br/>
-		Status <textarea name="status" required="required"></textarea> <br/>
-		<input type="submit" value="Simpan Data">
+		Pegawai <select class="form-control mt-2" id="IDPegawai" name="IDPegawai" required="required">
+            @foreach($pegawai as $p)
+                <option value="{{ $p->pegawai_id }}"> {{ $p->pegawai_nama }}</option>
+            @endforeach
+        </select><br>
+        <div class="form-group">
+            <label for="datetimepicker" class="control-label">Tanggal </label>
+                <div class=' input-group date ' id='datetimepicker'>
+                    <input type='text' required="required" class="form-control" name="tanggal" />
+                    <span class="input-group-addon input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                    </span>
+                </div>
+            </div>
+            Status
+            <div class="form-check mt-2">
+                <input type="radio" class="form-check-input" id="hadir" name="status" value="H">
+                <label for="hadir">HADIR</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="tidak" name="status" value="T" checked="checked">
+                <label for="tidak">TIDAK HADIR</label><br>
+            </div>
+            <div class="text-center">
+                <input class="btn btn-primary" type="submit"  value="Simpan Data">
+            </div>
 	</form>
+    @endsection
 
-</body>
-</html>
+
