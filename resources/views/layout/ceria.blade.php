@@ -44,7 +44,7 @@
                 <a href="http://127.0.0.1:8000/absen">Absen</a>
               </li>
               <li>
-                <a href="http://127.0.0.1:8000/absen">Minggu Depan</a>
+                <a href="http://127.0.0.1:8000/ikan">Ikan</a>
               </li>
               <li>
                 <a href="http://127.0.0.1:8000/absen">Praktikum</a>
