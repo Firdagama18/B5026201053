@@ -14,10 +14,9 @@
 		<input class="btn btn-success" type="submit" value="CARI">
 	</form>
 
-	<table class="table table-success table-striped">
+	<table class="table table-success table-striped mt-3">
         	<tr>
             <th>No</th>
-			<th>Kode Ikan</th>
 			<th>Nama Ikan</th>
 			<th>Stock</th>
 			<th>Ketersediaan</th>
@@ -27,14 +26,13 @@
 		@foreach($ikan as $p)
 		<tr>
             <td>{{ $loop->iteration }}</td>
-			<td>{{ $p->kodeikan }}</td>
 			<td>{{ $p->namaikan }}</td>
 			<td>{{ $p->jumlahikan }}</td>
 			<td>{{ $p->tersedia }}</td>
 			<td>
                 <a href="/ikan/detail/{{ $p->kodeikan }}" class="btn btn-primary">Detail</a>
 				<a href="/ikan/edit/{{ $p->kodeikan}}" class="btn btn-warning">Edit</a>
-				<a href="/sandal/hapus/{{ $p->kodeikan }}" class="btn btn-danger">Hapus</a>
+				<a href="/ikan/hapus/{{ $p->kodeikan }}" class="btn btn-danger">Hapus</a>
 			</td>
 		</tr>
 		@endforeach

@@ -1,4 +1,3 @@
-
     @extends('layout.ceria')
 
     @section('isikonten')

@@ -11,7 +11,7 @@ class AbsenController extends Controller
     {
     	// mengambil data dari table pegawai
     	$absen = DB::table('absen')
-        ->join('pegawai', 'absen.ID', '=', 'pegawai.pegawai_id')
+        ->join('pegawai', 'absen.IDPegawai', '=', 'pegawai.pegawai_id')
         ->select('absen.*', 'pegawai.pegawai_nama')
         ->paginate(3);
 
