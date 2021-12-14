@@ -2,15 +2,15 @@
 
 @section('isikonten')
 
-	<a href="/pegawai/tambah" class="btn btn-success"> Tambah Pegawai Baru</a>
+	<a href="/pegawai/tambah" class="btn btn-primary"> Tambah Pegawai Baru</a>
 
 	<br/>
 	<br/>
-    <div class="container" align="center">
+    <div class="container">
         <p>Cari Data Pegawai :</p>
         <form action="/pegawai/cari" method="GET">
-            <input class="form-control" type="text" name="cari" placeholder="Cari Pegawai .." value="{{ old('cari') }}">
-            <input class="form=control btn-warning" type="submit" value="CARI">
+            <input type="text" name="cari" placeholder="Cari Pegawai .." value="{{ old('cari') }}">
+		    <input class="btn btn-success" type="submit" value="CARI">
         </form>
     </div>
 

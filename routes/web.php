@@ -57,3 +57,12 @@ Route::post('/ikan/update','IkanController@update');
 Route::get('/ikan/hapus/{id}','IkanController@hapus');
 Route::get('/ikan/cari','IkanController@cari');
 Route::get('/ikan/detail/{id}','IkanController@detail');
+
+Route::get('/nilaikuliah','NilaiKuliahController@index');
+Route::get('/nilaikuliah/tambah','NilaiKuliahController@tambah');
+Route::post('/nilaikuliah/store','NilaiKuliahController@store');
+Route::get('/nilaikuliah/edit/{id}','NilaiKuliahController@edit');
+Route::post('/nilaikuliah/update','NilaiKuliahController@update');
+Route::get('/nilaikuliah/hapus/{id}','NilaiKuliahController@hapus');
+Route::get('/nilaikuliah/cari','NilaiKuliahController@cari');
+Route::get('/nilaikuliah/detail/{id}','NilaiKuliahController@detail');

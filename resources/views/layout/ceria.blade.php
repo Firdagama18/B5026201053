@@ -47,7 +47,7 @@
                 <a href="http://127.0.0.1:8000/ikan">Ikan</a>
               </li>
               <li>
-                <a href="http://127.0.0.1:8000/absen">Praktikum</a>
+                <a href="http://127.0.0.1:8000/nilaikuliah">UAS E5</a>
               </li>
             </ul>
 

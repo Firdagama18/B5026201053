@@ -11,7 +11,6 @@
 
 	<form action="/ikan/store" method="post">
 		{{ csrf_field() }}
-		kode ikan <input class="form-control" type="text" name="kodeikan" required="required"> <br/>
 		nama ikan <input class="form-control" type="text" name="namaikan" required="required"> <br/>
 		jumlah ikan<input class="form-control" type="number" name="jumlah" required="required"> <br/>
         <div class="mb-3">
